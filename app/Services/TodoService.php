@@ -37,7 +37,7 @@ class TodoService
 
         $todo->delete();
     }
-
+    
     public function deleteAllTodos(User $user): void {
         $user->todos()->delete();
     }

@@ -1,12 +1,7 @@
 <?php
-class Auth {
-    function login() {
-        echo "User logged in!";
-    }
+$roles = ["admin", "developer", "user"];
+$role = "author";
 
-    function logout() {
-        echo "User logged out!";
-    }
-}
+$result = in_array($role, $roles, true);
 
-var_dump([Auth::class, 'login']);
+echo $result."\n";

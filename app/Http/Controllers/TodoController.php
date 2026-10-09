@@ -71,6 +71,5 @@ class TodoController extends Controller
         return response()->json([
             'message' => 'all Todos Deleted successfully'
         ]);
-
     }
 }
