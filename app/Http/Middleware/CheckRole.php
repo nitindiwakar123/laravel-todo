@@ -17,8 +17,6 @@ class CheckRole
                 'message' => 'Forbidden',
             ], 403);
         }
-
         return $next($request);
     }
 }
-

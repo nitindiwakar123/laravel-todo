@@ -20,4 +20,3 @@ Route::middleware('auth:api')->post(
 Route::middleware('auth:api')->patch('/todos/{id}', [TodoController::class, 'update']);
 Route::middleware('auth:api')->delete('/todos/{id}', [TodoController::class, 'destroy']);
 Route::middleware('auth:api')->delete('/todos', [TodoController::class, 'erase']);
-
